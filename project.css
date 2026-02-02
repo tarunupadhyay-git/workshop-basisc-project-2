@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  height: 100vh;
+  background: linear-gradient(135deg, #c7364a, #6b1d5c);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game {
+  position: relative;
+  width: 900px;
+  height: 500px;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(20px);
+  border-radius: 12px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 40px 80px rgba(0,0,0,0.3);
+}
+
+.player {
+  flex: 1;
+  padding: 70px;
+  text-align: center;
+  color: #333;
+}
+
+.player--active {
+  background: rgba(255,255,255,0.25);
+}
+
+.name {
+  font-size: 32px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.score {
+  font-size: 80px;
+  font-weight: 300;
+  color: #c7364a;
+  margin-bottom: 120px;
+}
+
+.current {
+  background: #c7364a;
+  width: 170px;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 9px;
+  color: #fff;
+}
+
+.current-label {
+  font-size: 14px;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.current-score {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255,255,255,0.9);
+  border: none;
+  padding: 10px 25px;
+  border-radius: 50px;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn--new {
+  top: 30px;
+}
+
+.btn--roll {
+  bottom: 110px;
+}
+
+.btn--hold {
+  bottom: 60px;
+}
+
+.dice {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+  border-radius: 8px;
+}
